@@ -15,6 +15,8 @@
         Gallery | Our Family
     </title>
 
+    <link rel="icon" href="assets/images/family/logo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -25,12 +27,14 @@
 
 <body>
 
+<div class="bg-shift" aria-hidden="true"></div>
+
 <header class="site-header">
 
     <nav class="navbar container">
 
         <a class="brand" href="index.html">
-            <span class="brand-mark">F</span>
+            <img class="brand-logo" src="assets/images/family/logo.png" alt="Our Family logo" width="43" height="43">
             <span>
                 <strong data-en="OUR FAMILY" data-zh="我们的家">OUR FAMILY</strong>
                 <small data-en="Work · Community · Life" data-zh="工作 · 社区 · 生活">Work · Community · Life</small>
@@ -70,7 +74,12 @@
 <main>
 
     <section class="page-hero">
-        <div class="container">
+        <div class="hero-blobs" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="container hero-inner">
 
             <p class="eyebrow" data-en="Gallery" data-zh="相册">Gallery</p>
 
@@ -79,7 +88,8 @@
                 Life, work, and community in photographs.
             </h1>
 
-            <p data-en="Replace the sample panels with your photographs. The folder structure is already prepared for family, professional, community, and yearly galleries."
+            <p class="hero-lede"
+               data-en="Replace the sample panels with your photographs. The folder structure is already prepared for family, professional, community, and yearly galleries."
                data-zh="将示例面板替换为您的照片。文件夹结构已为家庭、职业、社区和年度相册做好准备。">
                 Replace the sample panels with your photographs. The folder
                 structure is already prepared for family, professional,
@@ -90,34 +100,44 @@
     </section>
 
 
-    <section class="section">
+    <section class="section section-warm">
 
-        <div class="container gallery-grid">
+        <div class="container">
 
-            <a class="gallery-tile large" href="#">
-                <span data-en="Family" data-zh="家庭">Family</span>
-                <small data-en="Family events & milestones" data-zh="家庭活动与里程碑">Family events & milestones</small>
-            </a>
+            <p class="eyebrow" data-en="Browse" data-zh="浏览">Browse</p>
 
-            <a class="gallery-tile" href="#">
-                <span data-en="Professional" data-zh="职业">Professional</span>
-                <small data-en="Career & achievements" data-zh="事业与成就">Career & achievements</small>
-            </a>
+            <h2 data-en="Collections and years." data-zh="专辑与年份。">
+                Collections and years.
+            </h2>
 
-            <a class="gallery-tile" href="#">
-                <span data-en="Community" data-zh="社区">Community</span>
-                <small data-en="Organizations & events" data-zh="组织与活动">Organizations & events</small>
-            </a>
+            <div class="gallery-grid">
 
-            <a class="gallery-tile" href="#">
-                <span data-en="2026" data-zh="2026">2026</span>
-                <small data-en="Recent memories" data-zh="近期回忆">Recent memories</small>
-            </a>
+                <a class="gallery-tile large" href="#">
+                    <span data-en="Family" data-zh="家庭">Family</span>
+                    <small data-en="Family events & milestones" data-zh="家庭活动与里程碑">Family events &amp; milestones</small>
+                </a>
 
-            <a class="gallery-tile" href="#">
-                <span data-en="2025" data-zh="2025">2025</span>
-                <small data-en="Recent memories" data-zh="近期回忆">Recent memories</small>
-            </a>
+                <a class="gallery-tile" href="#">
+                    <span data-en="Professional" data-zh="职业">Professional</span>
+                    <small data-en="Career & achievements" data-zh="事业与成就">Career &amp; achievements</small>
+                </a>
+
+                <a class="gallery-tile" href="#">
+                    <span data-en="Community" data-zh="社区">Community</span>
+                    <small data-en="Organizations & events" data-zh="组织与活动">Organizations &amp; events</small>
+                </a>
+
+                <a class="gallery-tile" href="#">
+                    <span data-en="2026" data-zh="2026">2026</span>
+                    <small data-en="Recent memories" data-zh="近期回忆">Recent memories</small>
+                </a>
+
+                <a class="gallery-tile" href="#">
+                    <span data-en="2025" data-zh="2025">2025</span>
+                    <small data-en="Recent memories" data-zh="近期回忆">Recent memories</small>
+                </a>
+
+            </div>
 
         </div>
 
@@ -127,24 +147,26 @@
 
 
 <footer class="footer">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container footer-centered">
 
-    <div class="container footer-grid">
+        <img class="footer-logo" src="assets/images/family/logo.png" alt="Our Family logo" width="72" height="72">
 
-        <div>
-            <div class="footer-brand" data-en="OUR FAMILY" data-zh="我们的家">OUR FAMILY</div>
-            <p data-en="A private family archive of work, community, and life."
-               data-zh="一个记录工作、社区与生活的私人家族档案。">
-                A private family archive of work, community, and life.
-            </p>
-        </div>
+        <div class="footer-brand" data-en="OUR FAMILY" data-zh="我们的家">OUR FAMILY</div>
+
+        <p class="footer-tagline"
+           data-en="A private family archive of work, community, and life."
+           data-zh="一个记录工作、社区与生活的私人家族档案。">
+            A private family archive of work, community, and life.
+        </p>
 
         <div class="footer-meta">
             <span data-en="© 2026 Our Family" data-zh="© 2026 我们的家">© 2026 Our Family</span>
+            <span class="footer-dot">·</span>
             <span data-en="Built as a living archive" data-zh="构建为一份鲜活的档案">Built as a living archive</span>
         </div>
 
     </div>
-
 </footer>
 
 
@@ -207,5 +229,4 @@ body.dark .language-menu button:hover,body.theme-dark .language-menu button:hove
 <script src="js/main.js"></script>
 
 </body>
-
 </html>

@@ -15,6 +15,8 @@
         Community | Our Family
     </title>
 
+    <link rel="icon" href="assets/images/family/logo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -30,7 +32,7 @@
     <nav class="navbar container">
 
         <a class="brand" href="index.html">
-            <span class="brand-mark">F</span>
+            <img class="brand-logo" src="assets/images/family/logo.png" alt="Our Family logo" width="43" height="43">
             <span>
                 <strong data-en="OUR FAMILY" data-zh="我们的家">OUR FAMILY</strong>
                 <small data-en="Work · Community · Life" data-zh="工作 · 社区 · 生活">Work · Community · Life</small>
@@ -89,35 +91,36 @@
     </section>
 
 
-    <section class="section">
-
+    <section class="section section-cool">
         <div class="container">
+            <div class="card-grid">
 
-            <div class="feature-grid">
-
-                <div class="feature-card">
-                    <span class="card-number">01</span>
+                <div class="card card-gold">
+                    <div class="card-icon" aria-hidden="true">✦</div>
                     <h3 data-en="Organizations" data-zh="组织">Organizations</h3>
-                    <p data-en="Add organizations, boards, clubs, and community groups."
+                    <p class="muted"
+                       data-en="Add organizations, boards, clubs, and community groups."
                        data-zh="添加组织、理事会、俱乐部和社区团体。">
                         Add organizations, boards, clubs, and community groups.
                     </p>
                 </div>
 
-                <div class="feature-card">
-                    <span class="card-number">02</span>
+                <div class="card card-teal">
+                    <div class="card-icon" aria-hidden="true">♥</div>
                     <h3 data-en="Service" data-zh="服务">Service</h3>
-                    <p data-en="Describe volunteer work, outreach, mentoring, and service projects."
+                    <p class="muted"
+                       data-en="Describe volunteer work, outreach, mentoring, and service projects."
                        data-zh="描述志愿工作、外展、辅导和服务项目。">
                         Describe volunteer work, outreach, mentoring, and
                         service projects.
                     </p>
                 </div>
 
-                <div class="feature-card">
-                    <span class="card-number">03</span>
+                <div class="card card-sage">
+                    <div class="card-icon" aria-hidden="true">❖</div>
                     <h3 data-en="Events" data-zh="活动">Events</h3>
-                    <p data-en="Preserve community gatherings, celebrations, cultural programs, and activities."
+                    <p class="muted"
+                       data-en="Preserve community gatherings, celebrations, cultural programs, and activities."
                        data-zh="保存社区聚会、庆典、文化节目和活动。">
                         Preserve community gatherings, celebrations, cultural
                         programs, and activities.
@@ -125,27 +128,32 @@
                 </div>
 
             </div>
-
         </div>
-
     </section>
 
 </main>
 
 
 <footer class="footer">
-    <div class="container footer-grid">
-        <div>
-            <div class="footer-brand" data-en="OUR FAMILY" data-zh="我们的家">OUR FAMILY</div>
-            <p data-en="A private family archive of work, community, and life."
-               data-zh="一个记录工作、社区与生活的私人家族档案。">
-                A private family archive of work, community, and life.
-            </p>
-        </div>
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container footer-centered">
+
+        <img class="footer-logo" src="assets/images/family/logo.png" alt="Our Family logo" width="72" height="72">
+
+        <div class="footer-brand" data-en="OUR FAMILY" data-zh="我们的家">OUR FAMILY</div>
+
+        <p class="footer-tagline"
+           data-en="A private family archive of work, community, and life."
+           data-zh="一个记录工作、社区与生活的私人家族档案。">
+            A private family archive of work, community, and life.
+        </p>
+
         <div class="footer-meta">
             <span data-en="© 2026 Our Family" data-zh="© 2026 我们的家">© 2026 Our Family</span>
+            <span class="footer-dot">·</span>
             <span data-en="Built as a living archive" data-zh="构建为一份鲜活的档案">Built as a living archive</span>
         </div>
+
     </div>
 </footer>
 
@@ -209,5 +217,4 @@ body.dark .language-menu button:hover,body.theme-dark .language-menu button:hove
 <script src="js/main.js"></script>
 
 </body>
-
 </html>

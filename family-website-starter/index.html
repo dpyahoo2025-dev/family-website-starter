@@ -19,6 +19,9 @@
         Home | Our Family
     </title>
 
+    <link rel="icon"
+          href="assets/images/family/logo.png">
+
     <link rel="preconnect"
           href="https://fonts.googleapis.com">
 
@@ -37,18 +40,20 @@
 
 <body>
 
-<!-- =========================================
-     HEADER
-     ========================================= -->
+<div class="bg-shift" aria-hidden="true"></div>
+
 
 <header class="site-header">
 
     <nav class="navbar container">
 
-        <a class="brand"
-           href="index.html">
+        <a class="brand" href="index.html">
 
-            <span class="brand-mark">F</span>
+            <img class="brand-logo"
+                 src="assets/images/family/logo.png"
+                 alt="Our Family logo"
+                 width="43"
+                 height="43">
 
             <span>
                 <strong data-en="OUR FAMILY"
@@ -63,97 +68,37 @@
 
         </a>
 
-        <button class="menu-toggle"
-                id="menuToggle">
-            ☰
-        </button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
 
-        <div class="nav-links"
-             id="navLinks">
+        <div class="nav-links" id="navLinks">
 
-            <a href="index.html"
-               data-en="Home"
-               data-zh="首页">
-                Home
-            </a>
-
-            <a href="story.html"
-               data-en="Our Story"
-               data-zh="我们的故事">
-                Our Story
-            </a>
-
-            <a href="professional.html"
-               data-en="Professional"
-               data-zh="职业">
-                Professional
-            </a>
-
-            <a href="community.html"
-               data-en="Community"
-               data-zh="社区">
-                Community
-            </a>
-
-            <a href="timeline.html"
-               data-en="Timeline"
-               data-zh="时间线">
-                Timeline
-            </a>
-
-            <a href="gallery.html"
-               data-en="Gallery"
-               data-zh="相册">
-                Gallery
-            </a>
-
-            <a href="memories.html"
-               data-en="Memories"
-               data-zh="回忆">
-                Memories
-            </a>
-
-            <a href="contact.html"
-               data-en="Contact"
-               data-zh="联系我们">
-                Contact
-            </a>
-
-
-            <!-- LANGUAGE SWITCHER -->
+            <a href="index.html" data-en="Home" data-zh="首页">Home</a>
+            <a href="story.html" data-en="Our Story" data-zh="我们的故事">Our Story</a>
+            <a href="professional.html" data-en="Professional" data-zh="职业">Professional</a>
+            <a href="community.html" data-en="Community" data-zh="社区">Community</a>
+            <a href="timeline.html" data-en="Timeline" data-zh="时间线">Timeline</a>
+            <a href="gallery.html" data-en="Gallery" data-zh="相册">Gallery</a>
+            <a href="memories.html" data-en="Memories" data-zh="回忆">Memories</a>
+            <a href="contact.html" data-en="Contact" data-zh="联系我们">Contact</a>
 
             <div class="language-switcher">
 
-                <button
-                    id="languageButton"
-                    aria-label="Select language"
-                    title="Select language">
+                <button id="languageButton"
+                        aria-label="Select language"
+                        title="Select language">
                     🌐 English
                 </button>
 
-                <div
-                    id="languageMenu"
-                    class="language-menu">
+                <div id="languageMenu" class="language-menu">
 
-                    <button id="englishButton">
-                        🇺🇸 English
-                    </button>
-
-                    <button id="chineseButton">
-                        🇨🇳 中文
-                    </button>
+                    <button id="englishButton">🇺🇸 English</button>
+                    <button id="chineseButton">🇨🇳 中文</button>
 
                 </div>
 
             </div>
 
-
-            <!-- DARK MODE -->
-
-            <button class="icon-button"
-                    id="themeButton">
-                ☾
-            </button>
+            <button class="icon-button" id="themeButton">☾</button>
 
         </div>
 
@@ -164,17 +109,17 @@
 
 <main>
 
-    <!-- =========================================
-         HERO
-         ========================================= -->
-
     <section class="page-hero">
 
-        <div class="container">
+        <div class="hero-blobs" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-            <p class="eyebrow"
-               data-en="Welcome"
-               data-zh="欢迎">
+        <div class="container hero-inner">
+
+            <p class="eyebrow" data-en="Welcome" data-zh="欢迎">
                 Welcome
             </p>
 
@@ -183,29 +128,42 @@
                 A living archive of our family.
             </h1>
 
-            <p data-en="Stories, milestones, work, community, and the moments that shape who we are. This is our shared place to remember, reflect, and pass things on."
+            <p class="hero-lede"
+               data-en="Stories, milestones, work, community, and the moments that shape who we are. This is our shared place to remember, reflect, and pass things on."
                data-zh="故事、里程碑、工作、社区，以及塑造我们的那些时刻。这里是我们共同回忆、反思与传承的地方。">
                 Stories, milestones, work, community, and the moments
                 that shape who we are. This is our shared place to
                 remember, reflect, and pass things on.
             </p>
 
+            <div class="hero-actions">
+
+                <a class="button button-primary"
+                   href="story.html"
+                   data-en="Begin the story"
+                   data-zh="从故事开始">
+                    Begin the story
+                </a>
+
+                <a class="button button-light"
+                   href="gallery.html"
+                   data-en="Browse the gallery"
+                   data-zh="浏览相册">
+                    Browse the gallery
+                </a>
+
+            </div>
+
         </div>
 
     </section>
 
 
-    <!-- =========================================
-         INTRODUCTION
-         ========================================= -->
-
-    <section class="section">
+    <section class="section section-warm">
 
         <div class="container">
 
-            <p class="eyebrow"
-               data-en="About this archive"
-               data-zh="关于本档案">
+            <p class="eyebrow" data-en="About this archive" data-zh="关于本档案">
                 About this archive
             </p>
 
@@ -236,17 +194,11 @@
     </section>
 
 
-    <!-- =========================================
-         EXPLORE — CARD GRID
-         ========================================= -->
-
-    <section class="section">
+    <section class="section section-cool">
 
         <div class="container">
 
-            <p class="eyebrow"
-               data-en="Explore"
-               data-zh="探索">
+            <p class="eyebrow" data-en="Explore" data-zh="探索">
                 Explore
             </p>
 
@@ -257,122 +209,75 @@
 
             <div class="card-grid">
 
-                <!-- OUR STORY -->
-
-                <a class="card"
-                   href="story.html">
-
-                    <h3 data-en="Our Story"
-                        data-zh="我们的故事">
-                        Our Story
-                    </h3>
-
+                <a class="card card-gold" href="story.html">
+                    <div class="card-icon" aria-hidden="true">✦</div>
+                    <h3 data-en="Our Story" data-zh="我们的故事">Our Story</h3>
                     <p class="muted"
                        data-en="The roots, the beginnings, and the people who came before us."
                        data-zh="根源、起点，以及在我们之前的人们。">
                         The roots, the beginnings, and the people who
                         came before us.
                     </p>
-
+                    <span class="card-arrow">→</span>
                 </a>
 
-
-                <!-- PROFESSIONAL -->
-
-                <a class="card"
-                   href="professional.html">
-
-                    <h3 data-en="Professional"
-                        data-zh="职业生涯">
-                        Professional
-                    </h3>
-
+                <a class="card card-teal" href="professional.html">
+                    <div class="card-icon" aria-hidden="true">◆</div>
+                    <h3 data-en="Professional" data-zh="职业生涯">Professional</h3>
                     <p class="muted"
                        data-en="Careers, achievements, and the work that has shaped our lives."
                        data-zh="事业、成就，以及塑造我们人生的那些工作。">
                         Careers, achievements, and the work that has
                         shaped our lives.
                     </p>
-
+                    <span class="card-arrow">→</span>
                 </a>
 
-
-                <!-- COMMUNITY -->
-
-                <a class="card"
-                   href="community.html">
-
-                    <h3 data-en="Community"
-                        data-zh="社区">
-                        Community
-                    </h3>
-
+                <a class="card card-sage" href="community.html">
+                    <div class="card-icon" aria-hidden="true">♥</div>
+                    <h3 data-en="Community" data-zh="社区">Community</h3>
                     <p class="muted"
                        data-en="Service, volunteering, and the causes we care about."
                        data-zh="服务、志愿服务，以及我们关心的事业。">
                         Service, volunteering, and the causes we care
                         about.
                     </p>
-
+                    <span class="card-arrow">→</span>
                 </a>
 
-
-                <!-- TIMELINE -->
-
-                <a class="card"
-                   href="timeline.html">
-
-                    <h3 data-en="Timeline"
-                        data-zh="时间线">
-                        Timeline
-                    </h3>
-
+                <a class="card card-plum" href="timeline.html">
+                    <div class="card-icon" aria-hidden="true">❖</div>
+                    <h3 data-en="Timeline" data-zh="时间线">Timeline</h3>
                     <p class="muted"
                        data-en="Milestones and moments, laid out year by year."
                        data-zh="里程碑与重要时刻，按年份呈现。">
                         Milestones and moments, laid out year by year.
                     </p>
-
+                    <span class="card-arrow">→</span>
                 </a>
 
-
-                <!-- GALLERY -->
-
-                <a class="card"
-                   href="gallery.html">
-
-                    <h3 data-en="Gallery"
-                        data-zh="相册">
-                        Gallery
-                    </h3>
-
+                <a class="card card-amber" href="gallery.html">
+                    <div class="card-icon" aria-hidden="true">❁</div>
+                    <h3 data-en="Gallery" data-zh="相册">Gallery</h3>
                     <p class="muted"
                        data-en="Photographs from the moments we want to remember."
                        data-zh="记录我们想要铭记的时刻的照片。">
                         Photographs from the moments we want to
                         remember.
                     </p>
-
+                    <span class="card-arrow">→</span>
                 </a>
 
-
-                <!-- MEMORIES -->
-
-                <a class="card"
-                   href="memories.html">
-
-                    <h3 data-en="Memories"
-                        data-zh="回忆">
-                        Memories
-                    </h3>
-
+                <a class="card card-coral" href="memories.html">
+                    <div class="card-icon" aria-hidden="true">✿</div>
+                    <h3 data-en="Memories" data-zh="回忆">Memories</h3>
                     <p class="muted"
                        data-en="Stories, reflections, and words from the people we love."
                        data-zh="来自我们所爱之人的故事、感悟与话语。">
                         Stories, reflections, and words from the
                         people we love.
                     </p>
-
+                    <span class="card-arrow">→</span>
                 </a>
 
             </div>
@@ -382,17 +287,11 @@
     </section>
 
 
-    <!-- =========================================
-         GALLERY PREVIEW
-         ========================================= -->
-
-    <section class="section">
+    <section class="section section-warm">
 
         <div class="container">
 
-            <p class="eyebrow"
-               data-en="From the gallery"
-               data-zh="相册精选">
+            <p class="eyebrow" data-en="From the gallery" data-zh="相册精选">
                 From the gallery
             </p>
 
@@ -403,26 +302,27 @@
 
             <div class="gallery-preview">
 
-                <img src="assets/images/gallery/photo-1.jpg"
-                     alt="Family photograph">
+                <div class="gallery-photo">
+                    <img src="assets/images/gallery/photo-1.jpg" alt="Family photograph">
+                </div>
 
-                <img src="assets/images/gallery/photo-2.jpg"
-                     alt="Family photograph">
+                <div class="gallery-photo">
+                    <img src="assets/images/gallery/photo-2.jpg" alt="Family photograph">
+                </div>
 
-                <img src="assets/images/gallery/photo-3.jpg"
-                     alt="Family photograph">
+                <div class="gallery-photo">
+                    <img src="assets/images/gallery/photo-3.jpg" alt="Family photograph">
+                </div>
 
             </div>
 
-            <p>
-
-                <a class="button"
+            <p class="center">
+                <a class="button button-primary"
                    href="gallery.html"
                    data-en="View the full gallery"
                    data-zh="查看完整相册">
                     View the full gallery
                 </a>
-
             </p>
 
         </div>
@@ -430,17 +330,11 @@
     </section>
 
 
-    <!-- =========================================
-         CALL TO ACTION
-         ========================================= -->
+    <section class="section section-cool">
 
-    <section class="section">
+        <div class="container cta-card">
 
-        <div class="container contact-card">
-
-            <p class="eyebrow"
-               data-en="Stay connected"
-               data-zh="保持联系">
+            <p class="eyebrow" data-en="Stay connected" data-zh="保持联系">
                 Stay connected
             </p>
 
@@ -457,15 +351,13 @@
                 you.
             </p>
 
-            <p>
-
-                <a class="button"
+            <p class="center">
+                <a class="button button-primary"
                    href="contact.html"
                    data-en="Contact us"
                    data-zh="联系我们">
                     Contact us
                 </a>
-
             </p>
 
         </div>
@@ -476,27 +368,32 @@
 
 
 <!-- =========================================
-     FOOTER
+     FOOTER — centered
      ========================================= -->
 
 <footer class="footer">
 
-    <div class="container footer-grid">
+    <div class="footer-glow" aria-hidden="true"></div>
 
-        <div>
+    <div class="container footer-centered">
 
-            <div class="footer-brand"
-                 data-en="OUR FAMILY"
-                 data-zh="我们的家">
-                OUR FAMILY
-            </div>
+        <img class="footer-logo"
+             src="assets/images/family/logo.png"
+             alt="Our Family logo"
+             width="72"
+             height="72">
 
-            <p data-en="A private family archive of work, community, and life."
-               data-zh="一个记录工作、社区与生活的私人家族档案。">
-                A private family archive of work, community, and life.
-            </p>
-
+        <div class="footer-brand"
+             data-en="OUR FAMILY"
+             data-zh="我们的家">
+            OUR FAMILY
         </div>
+
+        <p class="footer-tagline"
+           data-en="A private family archive of work, community, and life."
+           data-zh="一个记录工作、社区与生活的私人家族档案。">
+            A private family archive of work, community, and life.
+        </p>
 
         <div class="footer-meta">
 
@@ -504,6 +401,8 @@
                   data-zh="© 2026 我们的家">
                 © 2026 Our Family
             </span>
+
+            <span class="footer-dot">·</span>
 
             <span data-en="Built as a living archive"
                   data-zh="构建为一份鲜活的档案">
@@ -517,16 +416,9 @@
 </footer>
 
 
-<!-- =========================================
-     LANGUAGE SWITCHER STYLE
-     ========================================= -->
-
 <style>
 
-    .language-switcher {
-        position: relative;
-        display: inline-block;
-    }
+    .language-switcher { position: relative; display: inline-block; }
 
     #languageButton {
         border: none;
@@ -540,10 +432,7 @@
         border-radius: 8px;
         transition: background 0.3s ease, color 0.3s ease;
     }
-
-    #languageButton:hover {
-        background: rgba(0, 0, 0, 0.06);
-    }
+    #languageButton:hover { background: rgba(0, 0, 0, 0.06); }
 
     .language-menu {
         position: absolute;
@@ -558,10 +447,7 @@
         display: none;
         z-index: 1000;
     }
-
-    .language-menu.show {
-        display: block;
-    }
+    .language-menu.show { display: block; }
 
     .language-menu button {
         width: 100%;
@@ -575,25 +461,17 @@
         cursor: pointer;
         color: #333;
     }
-
     .language-menu button:hover {
         background: #EAF3FC;
         color: #0B4F9C;
     }
 
-    body.dark .language-menu,
-    body.theme-dark .language-menu {
+    body.dark .language-menu {
         background: #18232D;
         border-color: #2D3A45;
     }
-
-    body.dark .language-menu button,
-    body.theme-dark .language-menu button {
-        color: #E5E9EF;
-    }
-
-    body.dark .language-menu button:hover,
-    body.theme-dark .language-menu button:hover {
+    body.dark .language-menu button { color: #E5E9EF; }
+    body.dark .language-menu button:hover {
         background: #24384A;
         color: #8FC5FF;
     }
@@ -601,15 +479,7 @@
 </style>
 
 
-<!-- =========================================
-     LANGUAGE SCRIPT
-     ========================================= -->
-
 <script>
-
-    // -------------------------------------
-    // LANGUAGE TOGGLE
-    // -------------------------------------
 
     (function () {
 
@@ -623,49 +493,38 @@
 
         if (!langButton) return;
 
-        // Load saved language preference
         var currentLang = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG;
 
-        // Apply language to every element with data-en / data-zh
         function applyLanguage(lang) {
             currentLang = lang;
             localStorage.setItem(STORAGE_KEY, lang);
             document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
 
-            var elements = document.querySelectorAll("[data-en][data-zh]");
-            elements.forEach(function (el) {
+            document.querySelectorAll("[data-en][data-zh]").forEach(function (el) {
                 var text = el.getAttribute("data-" + lang);
-                if (text !== null) {
-                    el.textContent = text;
-                }
+                if (text !== null) el.textContent = text;
             });
 
-            // Update button label
             langButton.textContent = lang === "zh" ? "🌐 中文" : "🌐 English";
         }
 
-        // Initial apply
         applyLanguage(currentLang);
 
-        // Open/close menu
         langButton.addEventListener("click", function (e) {
             e.stopPropagation();
             langMenu.classList.toggle("show");
         });
 
-        // English
         enButton.addEventListener("click", function () {
             applyLanguage("en");
             langMenu.classList.remove("show");
         });
 
-        // Chinese
         zhButton.addEventListener("click", function () {
             applyLanguage("zh");
             langMenu.classList.remove("show");
         });
 
-        // Close menu when clicking outside
         document.addEventListener("click", function (e) {
             if (!langMenu.contains(e.target) && e.target !== langButton) {
                 langMenu.classList.remove("show");

@@ -15,6 +15,8 @@
         Timeline | Our Family
     </title>
 
+    <link rel="icon" href="assets/images/family/logo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -30,7 +32,7 @@
     <nav class="navbar container">
 
         <a class="brand" href="index.html">
-            <span class="brand-mark">F</span>
+            <img class="brand-logo" src="assets/images/family/logo.png" alt="Our Family logo" width="43" height="43">
             <span>
                 <strong data-en="OUR FAMILY" data-zh="我们的家">OUR FAMILY</strong>
                 <small data-en="Work · Community · Life" data-zh="工作 · 社区 · 生活">Work · Community · Life</small>
@@ -70,7 +72,12 @@
 <main>
 
     <section class="page-hero">
-        <div class="container">
+        <div class="hero-blobs" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="container hero-inner">
 
             <p class="eyebrow" data-en="Timeline" data-zh="时间线">Timeline</p>
 
@@ -79,7 +86,8 @@
                 Moments that mark the journey.
             </h1>
 
-            <p data-en="Start with a few major milestones and expand the timeline as your archive grows."
+            <p class="hero-lede"
+               data-en="Start with a few major milestones and expand the timeline as your archive grows."
                data-zh="从几个重要里程碑开始，随着档案的增长再逐步扩展。">
                 Start with a few major milestones and expand the timeline
                 as your archive grows.
@@ -89,69 +97,78 @@
     </section>
 
 
-    <section class="section">
+    <section class="section section-warm">
 
-        <div class="container timeline">
+        <div class="container timeline-wrap">
 
-            <article>
-                <time data-en="1980s" data-zh="1980 年代">1980s</time>
-                <div>
-                    <h3 data-en="Early chapter" data-zh="早期篇章">Early chapter</h3>
-                    <p data-en="Add education, career beginnings, family milestones, or other important memories."
-                       data-zh="添加教育、事业起点、家庭里程碑或其他重要记忆。">
-                        Add education, career beginnings, family milestones,
-                        or other important memories.
-                    </p>
-                </div>
-            </article>
+            <ol class="timeline">
 
-            <article>
-                <time data-en="1990s" data-zh="1990 年代">1990s</time>
-                <div>
-                    <h3 data-en="Growing roots" data-zh="扎根成长">Growing roots</h3>
-                    <p data-en="Add professional development, relocation, community connections, and family events."
-                       data-zh="添加职业发展、搬迁、社区联系和家庭活动。">
-                        Add professional development, relocation, community
-                        connections, and family events.
-                    </p>
-                </div>
-            </article>
+                <li class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <time data-en="1980s" data-zh="1980 年代">1980s</time>
+                        <h3 data-en="Early chapter" data-zh="早期篇章">Early chapter</h3>
+                        <p data-en="Add education, career beginnings, family milestones, or other important memories."
+                           data-zh="添加教育、事业起点、家庭里程碑或其他重要记忆。">
+                            Add education, career beginnings, family milestones,
+                            or other important memories.
+                        </p>
+                    </div>
+                </li>
 
-            <article>
-                <time data-en="2000s" data-zh="2000 年代">2000s</time>
-                <div>
-                    <h3 data-en="New opportunities" data-zh="新的机遇">New opportunities</h3>
-                    <p data-en="Add leadership, achievements, organizations, travel, celebrations, and memorable moments."
-                       data-zh="添加领导力、成就、组织、旅行、庆典和难忘时刻。">
-                        Add leadership, achievements, organizations, travel,
-                        celebrations, and memorable moments.
-                    </p>
-                </div>
-            </article>
+                <li class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <time data-en="1990s" data-zh="1990 年代">1990s</time>
+                        <h3 data-en="Growing roots" data-zh="扎根成长">Growing roots</h3>
+                        <p data-en="Add professional development, relocation, community connections, and family events."
+                           data-zh="添加职业发展、搬迁、社区联系和家庭活动。">
+                            Add professional development, relocation, community
+                            connections, and family events.
+                        </p>
+                    </div>
+                </li>
 
-            <article>
-                <time data-en="2010s" data-zh="2010 年代">2010s</time>
-                <div>
-                    <h3 data-en="Community & family" data-zh="社区与家庭">Community & family</h3>
-                    <p data-en="Add meaningful activities and photographs from this chapter."
-                       data-zh="添加这一篇章中有意义的活动和照片。">
-                        Add meaningful activities and photographs from this
-                        chapter.
-                    </p>
-                </div>
-            </article>
+                <li class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <time data-en="2000s" data-zh="2000 年代">2000s</time>
+                        <h3 data-en="New opportunities" data-zh="新的机遇">New opportunities</h3>
+                        <p data-en="Add leadership, achievements, organizations, travel, celebrations, and memorable moments."
+                           data-zh="添加领导力、成就、组织、旅行、庆典和难忘时刻。">
+                            Add leadership, achievements, organizations, travel,
+                            celebrations, and memorable moments.
+                        </p>
+                    </div>
+                </li>
 
-            <article>
-                <time data-en="2020s" data-zh="2020 年代">2020s</time>
-                <div>
-                    <h3 data-en="Today and beyond" data-zh="今天与未来">Today and beyond</h3>
-                    <p data-en="Continue adding new experiences and preserve them for future generations."
-                       data-zh="继续添加新的经历，并为后代保存下来。">
-                        Continue adding new experiences and preserve them for
-                        future generations.
-                    </p>
-                </div>
-            </article>
+                <li class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <time data-en="2010s" data-zh="2010 年代">2010s</time>
+                        <h3 data-en="Community & family" data-zh="社区与家庭">Community &amp; family</h3>
+                        <p data-en="Add meaningful activities and photographs from this chapter."
+                           data-zh="添加这一篇章中有意义的活动和照片。">
+                            Add meaningful activities and photographs from this
+                            chapter.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <time data-en="2020s" data-zh="2020 年代">2020s</time>
+                        <h3 data-en="Today and beyond" data-zh="今天与未来">Today and beyond</h3>
+                        <p data-en="Continue adding new experiences and preserve them for future generations."
+                           data-zh="继续添加新的经历，并为后代保存下来。">
+                            Continue adding new experiences and preserve them for
+                            future generations.
+                        </p>
+                    </div>
+                </li>
+
+            </ol>
 
         </div>
 
@@ -161,24 +178,26 @@
 
 
 <footer class="footer">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container footer-centered">
 
-    <div class="container footer-grid">
+        <img class="footer-logo" src="assets/images/family/logo.png" alt="Our Family logo" width="72" height="72">
 
-        <div>
-            <div class="footer-brand" data-en="OUR FAMILY" data-zh="我们的家">OUR FAMILY</div>
-            <p data-en="A private family archive of work, community, and life."
-               data-zh="一个记录工作、社区与生活的私人家族档案。">
-                A private family archive of work, community, and life.
-            </p>
-        </div>
+        <div class="footer-brand" data-en="OUR FAMILY" data-zh="我们的家">OUR FAMILY</div>
+
+        <p class="footer-tagline"
+           data-en="A private family archive of work, community, and life."
+           data-zh="一个记录工作、社区与生活的私人家族档案。">
+            A private family archive of work, community, and life.
+        </p>
 
         <div class="footer-meta">
             <span data-en="© 2026 Our Family" data-zh="© 2026 我们的家">© 2026 Our Family</span>
+            <span class="footer-dot">·</span>
             <span data-en="Built as a living archive" data-zh="构建为一份鲜活的档案">Built as a living archive</span>
         </div>
 
     </div>
-
 </footer>
 
 
@@ -241,5 +260,4 @@ body.dark .language-menu button:hover,body.theme-dark .language-menu button:hove
 <script src="js/main.js"></script>
 
 </body>
-
 </html>
